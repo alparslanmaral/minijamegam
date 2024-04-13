@@ -123,6 +123,107 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &313583830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 313583834}
+  - component: {fileID: 313583833}
+  - component: {fileID: 313583832}
+  - component: {fileID: 313583831}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &313583831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313583830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &313583832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313583830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &313583833
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313583830}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &313583834
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313583830}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &756790051
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,6 +259,7 @@ MonoBehaviour:
   speed: 5
   minDistance: 2
   startDistance: 1
+  avoidanceRadius: 0.5
 --- !u!135 &756790053
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -279,6 +381,7 @@ MonoBehaviour:
   speed: 5
   minDistance: 2
   startDistance: 1
+  avoidanceRadius: 0.5
 --- !u!135 &876900211
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -413,7 +516,7 @@ MonoBehaviour:
     Users: 
   _maxPlayers: 10
   AvatarSpawning: 1
-  AvatarPrefab: {fileID: 8922970923546773167, guid: ac508130a1eed6c428b64edd0a5c4c1f, type: 3}
+  AvatarPrefab: {fileID: 5287728089051686232, guid: e1f33febb1fbc164bb57491251644bd9, type: 3}
   AvatarSpawnLocation: {fileID: 1283719982}
   SpawnAvatarPerIndex: 0
   AvatarSpawnLocations: []
@@ -547,6 +650,7 @@ MonoBehaviour:
   speed: 5
   minDistance: 2
   startDistance: 1
+  avoidanceRadius: 0.5
 --- !u!135 &1075007953
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -668,6 +772,7 @@ MonoBehaviour:
   speed: 5
   minDistance: 2
   startDistance: 1
+  avoidanceRadius: 0.5
 --- !u!135 &1085748157
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -820,6 +925,7 @@ MonoBehaviour:
   speed: 5
   minDistance: 2
   startDistance: 1
+  avoidanceRadius: 0.5
 --- !u!135 &1301788565
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -941,6 +1047,7 @@ MonoBehaviour:
   speed: 5
   minDistance: 2
   startDistance: 1
+  avoidanceRadius: 0.5
 --- !u!135 &1552391552
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1152,6 +1259,10 @@ PrefabInstance:
     - target: {fileID: 8763101912960744424, guid: 5a577542a281e0a448dc3b383023e1f2, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763101913705298800, guid: 5a577542a281e0a448dc3b383023e1f2, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8763101913705298803, guid: 5a577542a281e0a448dc3b383023e1f2, type: 3}
       propertyPath: m_Pivot.x
@@ -1382,6 +1493,7 @@ MonoBehaviour:
   speed: 5
   minDistance: 2
   startDistance: 1
+  avoidanceRadius: 0.5
 --- !u!135 &1825265366
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1503,6 +1615,7 @@ MonoBehaviour:
   speed: 5
   minDistance: 2
   startDistance: 1
+  avoidanceRadius: 0.5
 --- !u!135 &2010908992
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1606,3 +1719,4 @@ SceneRoots:
   - {fileID: 989859128}
   - {fileID: 1775808168}
   - {fileID: 1283719982}
+  - {fileID: 313583834}
